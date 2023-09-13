@@ -1,10 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-var element = React.createElement('h1', { className: 'greeting' }, 'Hello, world! This is Gurbaksh!!');
-ReactDOM.render(element, document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+  <React.StrictMode>
+    <div>
+      <h1>Hello, world! This is Gurbaksh!!</h1>
+    </div>
+  </React.StrictMode>
+);
 
 reportWebVitals();
